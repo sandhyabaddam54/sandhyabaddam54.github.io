@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+        .listMain {
+            background-color: #ffffff;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 50px;
+        }
+        .ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding-right: 10px;
+        }
+        .aboutdiv {
+            background-color: rgb(0, 247, 255);
+            color:black;
+            height: 80%;
+            width: 100%;
+        }
+        .homediv {
+            background-color: rgb(68, 0, 255);
+            color:black;
+            height: 80%;
+            width: 100%;
+        }
+        .projectdiv {
+            background-color: rgb(0, 255, 55);
+            color:black;
+            height: 80%;
+            width: 100%;
+        }
+        .content {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 100%;">
+        <div class="listMain">
+           <ul class="ul">
+            <li onclick="headerSection('home')" >Home</li>
+            <li onclick="headerSection('about')">About</li>
+            <li onclick="headerSection('project')">Projects</li>
+            <li onclick="headerSection('contact')">Contact</li>
+           </ul> 
+        </div>
+        <div class="content">
+        <div class="homediv" id="home">
+            <p>Hi, I am Sandhya</p>
+        </div>
+        <div class="aboutdiv" id="about">
+            <p>Hi, I am Sandhya</p>
+        </div>
+        <div class="projectdiv" id="project">
+            <p>Hi, I am Sandhya</p>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function homeSection(section){
+            const sectionToshow = document.getElementById(section);
+            if(sectionToshow == 'about'){{
+                
+            }
+                
+            }
+        }
+    </script>
+</body>
+</html>
