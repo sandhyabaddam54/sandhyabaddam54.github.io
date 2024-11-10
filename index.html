@@ -4,8 +4,255 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* .header-card{
+            background-color: white;
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            position: fixed;
+            margin-bottom: 20px;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+        } */
+        .ahref {
+            display: flex;
+            align-items: flex-end;
+            justify-content: end;
+            padding: 10px 50px;
+            gap: 20px;
+            font-size: 20px;
+            background-color: white;
+            position: fixed;
+            z-index: 0;
+            width: 100%;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+
+        }
+        .content-section {
+            display: flex;
+            width: 100%; /* Full viewport width */
+            height: 100%; /* Full viewport height */
+            padding-top: 0px; /* Offset for fixed menu */
+        }
+        .text-section, .image-section {
+            flex: 1; /* Each section takes up half the width */
+        }
+        .text-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            padding-top: 40px;
+            text-align: justify;
+            margin-bottom: 14px;
+        }
+        .image-section img {
+            width: 100%;
+            padding-top: 40px;
+            opacity: 1;
+            margin-bottom: 10px;
+            transform: none;
+            object-fit:contain; /* Ensures image covers its half without distortion */
+        }
+        .div-about{
+            display:flex;
+            height: 100vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 2;
+        }
+        .td-project, .dca-project {
+            flex: 1;
+        }
+        .td-project{
+            display: block;
+             background-color: antiquewhite;
+             padding: 20px;
+             align-items: center;
+             justify-content: center;
+             align-content: center;
+             margin: 10px 80px 20px 80px;
+             box-shadow: rgba(0, 0, 0, 0.5);
+            }
+        .dca-project {
+            display: block;
+            background-color: bisque;
+            align-items: center;
+            align-content: center;
+            padding: 20px;
+            justify-content: center;
+            margin: 10px 80px 20px 80px;
+            box-shadow: rgba(0, 0, 0, 0.5);
+        }
+        .div-contact {
+            display: block;
+            height: 100vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+        }
+        .contact-div {
+            box-shadow: rgba(0, 0, 0, 0.1);
+            background-color:whitesmoke;
+            height: 100vh;
+            padding: 50px;
+        }
+        .label-username-email {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .input-username-email {
+            height: 40px;
+            width: 350px;
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid;
+        }
+        .username-div {
+            margin-bottom: 30px;
+        }
+        .btn-div {
+            align-content: center;
+            align-items: center;
+            margin-left: 100px;
+        }
+        .btnSubmit {
+           padding: 10px 40px 10px 40px;
+           align-content: center;
+           background-color:cornflowerblue;
+           color: white;
+           font-size: 16px;
+           border-radius: 10px;
+           border: 1px solid;
+        }
+        .inform-div, .div-contact{
+flex: 1;
+        }
+        .contact-container {
+            display: flex;
+            background-color: whitesmoke;
+            margin: 40px;
+            padding: 0;
+        }
+        .inform-div {
+            height: 100vh;
+            margin-top: 0;
+            padding: 0;
+            padding: 50px;
+        }
+        .email-phn-div{
+            text-align: end;
+            font-size: 25px;
+            margin-top: 50px;
+            align-items: flex-end;
+        }
+        .address-div{
+            text-align: end;
+            font-size: 30px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-    <h1>hello all...sandhya...</h1>
+    <!-- <div class="header-card">Welcome to My website</div> -->
+    <div id="menu" class="ahref">
+       <a href="#home" >Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+    </div>
+    <div>
+        <div class="content-section" id="home">
+            <div class="text-section">
+                <h1 style="display: block; font-size: 30px; padding: 10px;"><b>Hi, I am Sandhya</b></h1>
+
+                <p style="padding: 20px; font-size: 20px;">
+                    I am an Android Application developer, with Java and Kotlin Technologies.
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="/images/app_design.jpg" alt="App Development Image">
+            </div>
+        </div>
+        <div id="about">
+            
+            <h1 style="font-size: 30px; text-align: center; align-items: center; font-weight: bold; margin: 20px;">Projects</h1>
+            
+            <div class="div-about" >
+            <div class="td-project">
+                
+                <h1 style="text-align: center;">Telangana Diagnostics</h1> <br/>
+                <p>
+                This application is an extension to Telangana Diagnostics Web Portal which provides free patient diagnostic services across the state of Telangana using Hub & Spoke Model since 2018. <br><br><br>
+</p>
+<p>
+In order to make the Spoke / Sample Collection operations easier and faster, this new Mobile application had been rolled out which enables the end user to do Patient Registration, Test Assignment, Barcoding and Consignment Preparation. 
+            </p>
+            </div>
+            <div class="dca-project">
+                <h1 style="text-align: center;">
+                Drugs control Administration
+                </h1> <br/>
+                <p>
+                    The Drugs Control Administration was extended to Telangana region after the formation of Andhra Pradesh State in the year 1956 when four Drugs Inspectors were appointed and implementation of Drugs & Cosmetics Act was extended to this area.
+                <br> <br>    
+                </p>
+                    <p>
+This app is exclusively intended for department employees.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div id="contact" >
+            <h1 style="text-align: center; margin-top: 10px;">Contact</h1>
+            <div class="contact-container">
+            <div class="div-contact" >
+            <div class="contact-div">
+                <div class="username-div">
+              <label class="label-username-email">Name: </label> 
+              <p> <input type="text" class="input-username-email" placeholder="Enter your name"></p>
+            </div>
+            <div class="username-div" >
+                <label class="label-username-email" >Email: </label> 
+                <p> <input type="text" class="input-username-email" placeholder="Enter your email"></p>
+              </div>
+              <div class="username-div">
+                <label class="label-username-email" >Message: </label> 
+                <p><textarea placeholder="Enter your message" rows="5" cols="45" style="padding: 5px; border-radius: 10px; border: 1px solid;"></textarea>
+                </p>
+            </div>
+            <div class="btn-div">
+                <button class="btnSubmit">Submit</button>
+            </div>
+            <div>
+                <a href="mailto:@gmail.com" style="margin-top: 20px; display: block;">Contact me directly</a>
+            </div>
+              </div>
+        </div>
+        <div class="inform-div">
+           <div class="email-phn-div">
+            <p ><p>Email:</p><a href="">abcdefgh@gmail.com</a></p>
+           </div>
+           <div class="address-div">
+            <p>Address:</p>
+            <p>Hyderabad</p>
+           </div>
+        </div>
+        </div>
+        </div>
 </body>
 </html>
