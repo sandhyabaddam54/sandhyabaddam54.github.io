@@ -87,7 +87,8 @@
              justify-content: center;
              align-content: center;
              margin: 10px 80px 20px 80px;
-             box-shadow: rgba(0, 0, 0, 0.5);
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             transform: 0.3s;
             }
         .dca-project {
             display: block;
@@ -97,7 +98,8 @@
             padding: 20px;
             justify-content: center;
             margin: 10px 80px 20px 80px;
-            box-shadow: rgba(0, 0, 0, 0.5);
+            /* box-shadow: rgba(0, 0, 0, 0.5); */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .div-contact {
             display: block;
@@ -168,12 +170,31 @@ flex: 1;
             font-size: 30px;
             margin-top: 50px;
         }
+
+        .div-services {
+            display: flex;
+            background-color: white;
+            margin: 30px;
+            box-shadow: 8px 4px 15px rgba(0, 0, 0, 0.1);
+
+        }
+        .app-developement-div, .specialized-solutions-div{
+            flex: 1;
+        }
+        .app-developement-div {
+            padding: 30px;
+            margin: 20px;
+        }
+        .specialized-solutions-div{
+            padding: 30px;
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
     <!-- <div class="header-card">Welcome to My website</div> -->
     <div id="menu" class="ahref">
-       <a href="#home" >Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+       <a href="#home" >Home</a> | <a href="#about">Projects</a> | <a href="#services">Services</a>| <a href="#contact">Contact</a>
     </div>
     <div>
         <div class="content-section" id="home">
@@ -217,6 +238,45 @@ This app is exclusively intended for department employees.
             </div>
         </div>
         </div>
+
+
+
+
+        <div id="services">
+            
+            <h1 style="font-size: 30px; text-align: center; align-items: center; font-weight: bold; margin: 20px;">Services</h1>
+            
+            <div class="div-services" >
+            <div class="app-developement-div">
+                
+                <h2 style="text-align: center;">Provide Services</h2> <br/>
+                <h3>Native Android Development</h3>
+                <p>
+                Developing Applications with Java and Kotlin. Following MVC and MVVM patterns as well. <br><br><br>
+                </p>
+                <h3>UI/UX Design:</h3>
+                <p>
+                    Following XML, Jetpack Compose by using User friendly interfaces for mobile applications. <br><br><br>
+                    </p>
+            </div>
+            <div class="specialized-solutions-div">
+                <h1 style="text-align: center;">
+                Datebase Integration
+                </h1> <br/>
+                <p>
+                <br> <br>    
+                </p>
+                 Proficiency in local storage solutions like using Room Database or SQLite.
+                    <p>
+                        Ktor, Api Creations using KOtlin with Ktor framwork.
+                </p>
+            </div>
+        </div>
+        </div>
+
+
+
+
         <div id="contact" >
             <h1 style="text-align: center; margin-top: 10px;">Contact</h1>
             <div class="contact-container">
@@ -249,7 +309,7 @@ This app is exclusively intended for department employees.
            </div>
            <div class="address-div">
             <p>Address:</p>
-            <p>Hyderabad</p>
+            <p>Hyderabad, India</p>
            </div>
         </div>
         </div>
