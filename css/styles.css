@@ -204,11 +204,10 @@ flex: 1;
             width: 100px;
             border-radius: 8px;
             border: 1px solid;
-            background-color: cornflowerblue;
+            background-color:tomato;
             color: white;
             font-size: 16px;
             text-decoration: none; /* Removes underline from the link */
             line-height: 40px; /* Centers the text vertically */
-            cursor: pointer;
         }
         
